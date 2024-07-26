@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+
+      //    let obj = [
+
+      //        {
+
+      //           rollno:1001,
+      //           name:"mohit",
+      //           email:"mohit@gmail.com",
+      //           age:10,
+      //           city:"jaipur"
+      //        },
+      //        {
+
+      //          rollno:1002,
+      //          name:"rohit",
+      //          email:"rohit@gmail.com",
+      //          age:48,
+      //          city:"Udaipir"
+      //       },
+      //       {
+
+      //          rollno:1003,
+      //          name:"aman",
+      //          email:"aman@gmail.com",
+      //          age:88,
+      //          city:"jodhpur"
+      //       }
+
+      //    ]
+
+      //    let b = obj.filter((item)=>{
+
+      //        return item.age>18
+      //    })
+
+      //    console.log(b)
+
+
+
+
+      //    console.log(obj.name,obj.age)
+      // console.log(obj["name"])
+      // for(let i in obj){
+      //     console.log(i,obj[i])
+      // }
+
+
+
+    let obj =   {
+
+        rollno:1001,
+        fname:"mohit",
+        lname:"sharma",
+        email:"mohit@gmail.com",
+        age:10,
+        city:"jaipur",
+        skiils:["c","c++","js","mern","django"],
+        fullname:function(){
+            console.log(this.fname,this.lname)
+
+        },
+        marks:{
+            "p":85,
+            "c":40,
+            m:90
+        }
+    }
+
+    console.log(obj.marks["m"])
+    
+
+    </script>
+  </body>
+</html>
