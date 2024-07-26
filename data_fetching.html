@@ -13,7 +13,7 @@
             font-family: sans-serif;
         }
 
-        div{
+        .box{
 
             width: 200px;
             box-shadow: 0px 0px 10px rgb(136, 135, 135);
@@ -25,10 +25,15 @@
         h2{
              font-size: 15px;
         }
+
+        .image-div{
+
+            height: 200px;
+        }
         
         img{
-            height: 200px;
-            width: 100px;
+            height:100%;
+            width: 100%;
         }
     </style>
 </head>
@@ -48,14 +53,17 @@
                     let div = document.createElement('div');
                     let title = document.createElement('h4');
                     let price = document.createElement('h2');
+                    let image_div = document.createElement("div");
+                    image_div.className = "image-div"
                     let image = document.createElement('img');
                     let description = document.createElement('p');
                     title.innerHTML = "Title : " + i.title
                     price.innerHTML = "Price :" + i.price;
-                    description.innerHTML = "Description : "+i.description
+                    description.innerHTML = "Description : "+i.description.slice(0,20)
                     image.src = i.thumbnail
-
-                    div.append(image)
+                    image_div.append(image)
+                    div.className = "box"
+                    div.append(image_div)
                     div.append(title)
                     div.append(price)
                     div.append(description)
